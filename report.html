@@ -130,7 +130,8 @@ $(document).ready(function () {
 <div id="image-reading" class="section level2">
 <h2>Image reading</h2>
 <p>First I created a program to read the images and output a table with all the vectors with EBImage package.</p>
-<pre class="r"><code>#list name files and read files
+<pre class="r"><code>library(EBImage)
+#list name files and read files
 files &lt;- list.files(&quot;data/training&quot;)
 learn &lt;- read.csv2(&quot;data/label_learn.csv&quot;)
 

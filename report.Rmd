@@ -18,6 +18,7 @@ This project has been made for Pierre Fabre AI Challenge in France (december 201
 First I created a program to read the images and output a table with all the vectors with EBImage package. 
 
 ```{r eval=FALSE}
+library(EBImage)
 #list name files and read files
 files <- list.files("data/training")
 learn <- read.csv2("data/label_learn.csv")
